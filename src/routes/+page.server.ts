@@ -8,5 +8,5 @@ export const load = (async ({ fetch, setHeaders }) => {
 		all.push(data);
 	}
 	setHeaders({ 'cache-control': 'max-age=60' });
-	return { all_pokemon: all };
+	return { allPokemon: all };
 }) satisfies PageServerLoad;
