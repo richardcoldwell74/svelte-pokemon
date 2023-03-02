@@ -1,12 +1,18 @@
-<header class="header">Pokemon</header>
+<header>
+	<img class="header-logo" src="/svg/pokemon-logo.svg" alt="pokeball" />
+</header>
 
 <style>
 	header {
 		display: flex;
 		align-items: center;
-		background-color: #a2a2a2;
-		height: 40px;
-		padding: 5px;
+		justify-content: center;
+		background-color: #0f2a3f;
+		height: 100px;
 		margin: 0;
+		border-bottom: 1px solid #ffcb05;
+	}
+	.header-logo {
+		height: 90px;
 	}
 </style>
