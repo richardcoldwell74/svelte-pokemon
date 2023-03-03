@@ -1,4 +1,5 @@
 import type { PageServerLoad } from './$types';
+export const prerender = true;
 
 export const load = (async ({ fetch, setHeaders }) => {
 	const all = [];
