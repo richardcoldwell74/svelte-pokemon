@@ -1,6 +1,5 @@
 <script lang="ts">
 	import { page } from '$app/stores';
-	export const prerender = true;
 	import type { PageData } from './$types';
 	export let data: PageData;
 	$: ({ allPokemon } = data);
