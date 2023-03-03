@@ -5,7 +5,7 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		background-color: #a2a2a2;
+		background-color: #0f2a3f;
 		height: 40px;
 		padding: 5px;
 		margin: 0;

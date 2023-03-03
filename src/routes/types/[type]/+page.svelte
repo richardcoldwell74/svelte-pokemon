@@ -1,17 +1,20 @@
 <script lang="ts">
+	import { page } from '$app/stores';
 	import type { PageData } from './$types';
 	export let data: PageData;
 	$: ({ allPokemon } = data);
-	$: firstTwenty = allPokemon.slice(0, 20);
+	$: pokemonByType = allPokemon.filter(
+		(pokemon) => pokemon.types[0].type.name === $page.params.type
+	);
 </script>
 
-{#each firstTwenty as pokemon}
+{#each pokemonByType as pokemon}
 	<h3 class="white-text">{pokemon.name}</h3>
 	<img
 		src={'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/' +
 			pokemon.id +
 			'.png'}
-		alt={'${allPokemon[0].name}'}
+		alt={pokemon.name}
 	/>
 {/each}
 

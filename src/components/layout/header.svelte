@@ -1,5 +1,5 @@
 <header>
-	<img class="header-logo" src="/svg/pokemon-logo.svg" alt="pokeball" />
+	<a href="/"><img class="header-logo" src="/svg/pokemon-logo.svg" alt="pokeball" /></a>
 </header>
 
 <style>
