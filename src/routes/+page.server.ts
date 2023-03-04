@@ -1,6 +1,5 @@
 import type { PageServerLoad } from './$types';
 import {gql, GraphQLClient} from 'graphql-request';
-export const prerender = true;
 
 export const load = (async () => {
 	const graphCmsClient = new GraphQLClient('https://api-eu-west-2.hygraph.com/v2/clesv39t22l0601t96lqu02d0/master', {headers:{}});

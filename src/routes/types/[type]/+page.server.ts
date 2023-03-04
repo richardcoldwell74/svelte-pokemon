@@ -1,6 +1,5 @@
 import type { PageServerLoad } from './$types';
 import {gql, GraphQLClient} from 'graphql-request';
-export const prerender = true;
 
 export const load = (async (page) => {	
     console.log(page.params.type)
