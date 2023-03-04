@@ -1,28 +1,34 @@
 <script lang="ts">
 	import type { PageData } from './$types';
-	export const prerender = true;
 	export let data: PageData;
-	$: ({ allPokemon } = data);
-	$: firstTwenty = allPokemon.slice(0, 20);
+	
 </script>
 
-{#each firstTwenty as pokemon}
+<div class="page-container">
+{#each data.props.pokemons as pokemon}
 	<h3 class="white-text">{pokemon.name}</h3>
 	<img
-		src={'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/' +
-			pokemon.id +
-			'.png'}
+	class="pokemon-image"
+		src={pokemon.image.url}
 		alt={'${allPokemon[0].name}'}
 	/>
-	<!-- <img
-		src={'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/' +
-			pokemon.id +
-			'.png'}
-		alt={'${allPokemon[0].name}'}
-	/> -->
-{/each}
+	
+{/each} 
+
+</div>
 
 <style>
+	.page-container {
+		display: flex;
+		flex-direction: column;
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+
+	.pokemon-image {
+		width: 300px;
+		height: 300px;
+	}
 	.white-text {
 		color: #fff;
 	}

@@ -1,25 +1,33 @@
-<script lang="ts">
-	import { page } from '$app/stores';
-	export const prerender = true;
+<script lang="ts">	
 	import type { PageData } from './$types';
 	export let data: PageData;
-	$: ({ allPokemon } = data);
-	$: pokemonByType = allPokemon.filter(
-		(pokemon) => pokemon.types[0].type.name === $page.params.type
-	);
+	
 </script>
 
-{#each pokemonByType as pokemon}
+<div class="page-container">
+
+ {#each data.props.pokemons as pokemon}
 	<h3 class="white-text">{pokemon.name}</h3>
 	<img
-		src={'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/' +
-			pokemon.id +
-			'.png'}
-		alt={pokemon.name}
+	class="pokemon-image"
+		src={pokemon.image.url}
+		alt={'${allPokemon[0].name}'}
 	/>
-{/each}
+{/each} 
+</div>
 
 <style>
+		.page-container {
+		display: flex;
+		flex-direction: column;
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+
+	.pokemon-image {
+		width: 300px;
+		height: 300px;
+	}
 	.white-text {
 		color: #fff;
 	}
