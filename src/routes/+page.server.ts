@@ -6,12 +6,18 @@ export const load = (async () => {
 	const query = gql`
 		query AllPokemon {
 			pokemons {
-			pokemon_id
-			name
-			type
-			image {
-				url
-			}
+				pokemon_id
+				name
+				types 
+				image{ url}
+				hp
+				attack
+				defense
+				specialAttack
+				specialDefense
+				speed
+				height
+				weight
 			}
 		}`
 		const {pokemons} = await graphCmsClient.request(query);

@@ -11,7 +11,7 @@
 	<img
 	class="pokemon-image"
 		src={pokemon.image.url}
-		alt={'${allPokemon[0].name}'}
+		alt={'${pokemon.name}'}
 	/>
 {/each} 
 </div>

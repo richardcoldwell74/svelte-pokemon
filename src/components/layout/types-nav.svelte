@@ -2,7 +2,7 @@
 	<!-- <a href="/types/normal"><button>Normal</button></a> -->
 	<!-- <a href="/types/fighting"><button>Fighting</button></a> -->
 	<!-- <a href="/types/flying"><button>Flying</button></a> -->
-	<!-- <a href="/types/poison"><button>Poison</button></a> -->
+	<a href="/types/poison"><button>Poison</button></a>
 	<!-- <a href="/types/ground"><button>Ground</button></a> -->
 	<!-- <a href="/types/rock"><button>Rock</button></a> -->
 	<a href="/types/bug"><button>Bug</button></a>
