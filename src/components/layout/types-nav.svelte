@@ -5,11 +5,11 @@
 	<!-- <a href="/types/poison"><button>Poison</button></a> -->
 	<!-- <a href="/types/ground"><button>Ground</button></a> -->
 	<!-- <a href="/types/rock"><button>Rock</button></a> -->
-	<!-- <a href="/types/bug"><button>Bug</button></a> -->
+	<a href="/types/bug"><button>Bug</button></a>
 	<!-- <a href="/types/ghost"><button>Ghost</button></a> -->
 	<!-- <a href="/types/steel"><button>Steel</button></a> -->
 	<a href="/types/fire"><button>Fire</button></a>
-	<!-- <a href="/types/water"><button>Water</button></a> -->
+	<a href="/types/water"><button>Water</button></a>
 	<a href="/types/grass"><button>Grass</button></a>
 	<!-- <a href="/types/electric"><button>Electric</button></a> -->
 	<!-- <a href="/types/psychic"><button>Psychic</button></a> -->
