@@ -59,6 +59,7 @@
 		color: #fff;
 		margin: 0;
 		letter-spacing: 1px;
+		font-size: 18px;
 	}
 
 	.name-text {
@@ -66,5 +67,6 @@
 		color: #fff;
 		margin: 0;
 		letter-spacing: 1px;
+		font-size: 16px;
 	}
 </style>
