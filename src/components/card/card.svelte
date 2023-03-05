@@ -34,6 +34,7 @@
 		background-color: var(--background-color);
 		justify-content: center;
 		border-radius: 10px 10px 0 0;
+		padding: 20px 0 20px 0;
 	}
 
 	.card-bottom {
@@ -48,14 +49,14 @@
 	}
 
 	.pokemon-image {
-		width: 200px;
-		height: 200px;
+		width: 180px;
+		height: 180px;
 	}
 
 	.number-text {
 		font-family: 'Ubuntu', sans-serif;
 		color: #fff;
-		margin: 5px 0 2px 0;
+		margin: 15px 0 2px 0;
 	}
 
 	.name-text {
