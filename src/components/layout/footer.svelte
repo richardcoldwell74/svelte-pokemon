@@ -8,6 +8,7 @@
 		background-color: #0f2a3f;
 		height: 40px;
 		padding: 5px;
+		font-family: 'Ubuntu', sans-serif;
 		margin: 0;
 		filter: drop-shadow(0px -3px 10px rgba(0, 0, 0, 0.6));
 	}
