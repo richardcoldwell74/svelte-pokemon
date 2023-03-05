@@ -75,6 +75,7 @@
 	.pokemon-image {
 		width: 180px;
 		height: 180px;
+		filter: drop-shadow(0px 2px 8px rgba(0, 0, 0, 0.6));
 	}
 
 	.number-text {
