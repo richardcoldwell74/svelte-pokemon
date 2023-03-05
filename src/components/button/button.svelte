@@ -18,7 +18,6 @@
 <style>
 	.buttonBox {
 		display: flex;
-		margin: 0 10px;
 		position: relative;
 		width: 100px;
 		justify-content: center;
