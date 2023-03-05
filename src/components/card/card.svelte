@@ -47,7 +47,8 @@
 		cursor: pointer;
 		border: transparent solid 3px;
 		transform: scale(1);
-		transition: all 0.5s ease-in-out;
+		transition: scale 0.5s ease-in-out;
+		transition: border 0.5s ease-in-out;
 	}
 
 	.card-top {

@@ -29,8 +29,8 @@
 		/> -->
 		<!-- <Button --background-color={getTypeColor('ice').dark} label="Ice" url="/types/ice" />
 		<Button --background-color={getTypeColor('dragon').dark} label="Dragon" url="/types/dragon" />
-		<Button --background-color={getTypeColor('dark').dark} label="Dark" url="/types/dark" />
-		<Button --background-color={getTypeColor('fairy').dark} label="Fairy" url="/types/fairy" /> -->
+		<Button --background-color={getTypeColor('dark').dark} label="Dark" url="/types/dark" /> -->
+		<Button --background-color={getTypeColor('fairy').dark} label="Fairy" url="/types/fairy" />
 	</div>
 </div>
 
