@@ -57,11 +57,13 @@
 		font-family: 'Ubuntu', sans-serif;
 		color: #fff;
 		margin: 15px 0 2px 0;
+		letter-spacing: 1px;
 	}
 
 	.name-text {
 		font-family: 'Ubuntu', sans-serif;
 		color: #fff;
 		margin: 2px 0 5px 0;
+		letter-spacing: 1px;
 	}
 </style>

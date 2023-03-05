@@ -36,7 +36,7 @@
 		text-transform: uppercase;
 		color: white;
 		font-weight: 600;
-		letter-spacing: 2px;
+		letter-spacing: 1px;
 		border: none;
 		font-size: 14px;
 		cursor: pointer;
