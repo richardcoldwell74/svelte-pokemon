@@ -82,3 +82,15 @@ export const getTypeColor = (type: string): PokemonTypeColors => {
 
 	return pokemonType;
 };
+
+export const capitalizeFirstLetterOfEachWord = (inputString: string): string => {
+	const words = inputString.split(' ');
+	let capitalized = '';
+	capitalized = words
+		.map((word) => {
+			return word[0].toUpperCase() + word.substring(1);
+		})
+		.join(' ');
+
+	return capitalized;
+};

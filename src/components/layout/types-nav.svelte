@@ -6,14 +6,14 @@
 <div class="container">
 	<div class="nav-container">
 		<Button --background-color={getTypeColor('normal').dark} label="Normal" url="/types/normal" />
-		<!-- <a href="/types/fighting"><button>Fighting</button></a> -->
+		<!-- <Button --background-color={getTypeColor('fighting').dark} label="Fighting" url="/types/fighting" /> -->
 		<Button --background-color={getTypeColor('flying').dark} label="Flying" url="/types/flying" />
 		<Button --background-color={getTypeColor('poison').dark} label="Poison" url="/types/poison" />
 		<Button --background-color={getTypeColor('ground').dark} label="Ground" url="/types/ground" />
-		<!-- <a href="/types/rock"><button>Rock</button></a> -->
+		<!-- <Button --background-color={getTypeColor('rock').dark} label="Rock" url="/types/rock" /> -->
 		<Button --background-color={getTypeColor('bug').dark} label="Bug" url="/types/bug" />
-		<!-- <a href="/types/ghost"><button>Ghost</button></a> -->
-		<!-- <a href="/types/steel"><button>Steel</button></a> -->
+		<!-- <Button --background-color={getTypeColor('ghost').dark} label="Ghost" url="/types/ghost" /> -->
+		<!-- <Button --background-color={getTypeColor('steel').dark} label="Steel" url="/types/steel" /> -->
 		<Button --background-color={getTypeColor('fire').dark} label="Fire" url="/types/fire" />
 		<Button --background-color={getTypeColor('water').dark} label="Water" url="/types/water" />
 		<Button --background-color={getTypeColor('grass').dark} label="Grass" url="/types/grass" />
@@ -36,13 +36,14 @@
 
 <style>
 	.container {
-		height: 100px;
-		margin: 10px;
+		height: auto;
 		background-color: #0f2a3f;
 		filter: drop-shadow(0px 2px 8px rgba(0, 0, 0, 0.6));
+		margin: 0;
 	}
 	.nav-container {
 		margin: 0 auto;
+		padding: 15px 0;
 		max-width: 1200px;
 		width: 100%;
 		display: flex;
