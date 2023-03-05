@@ -43,12 +43,6 @@
 		background-color: var(--background-color);
 	}
 
-	/* .border {
-		position: absolute;
-		background: none;
-		transition: all 0.5s ease-in-out;
-	} */
-
 	.border-top {
 		position: absolute;
 		background: none;
@@ -122,20 +116,4 @@
 	:hover .border-left {
 		height: 30px;
 	}
-
-	/* .border.active:nth-of-type(1) {
-		width: 100%;
-	} */
-
-	/* .border.active:nth-of-type(2) {
-		width: 30px;
-	} */
-
-	/* .border.active:nth-of-type(3) {
-		width: 100%;
-	} */
-
-	/* .border.active:nth-of-type(4) {
-		width: 30px;
-	} */
 </style>
