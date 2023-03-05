@@ -36,13 +36,14 @@
 
 <style>
 	.container {
-		height: 100px;
-		margin: 10px;
+		height: auto;
 		background-color: #0f2a3f;
 		filter: drop-shadow(0px 2px 8px rgba(0, 0, 0, 0.6));
+		margin: 0;
 	}
 	.nav-container {
 		margin: 0 auto;
+		padding: 15px 0;
 		max-width: 1200px;
 		width: 100%;
 		display: flex;
