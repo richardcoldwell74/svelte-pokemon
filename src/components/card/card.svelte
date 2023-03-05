@@ -1,6 +1,6 @@
 <script lang="ts">
 	import type { Pokemon } from '$lib/types';
-	import { getTypeColor } from '$lib/helper-functions';
+	import { getTypeColor, capitalizeFirstLetterOfEachWord } from '$lib/helper-functions';
 
 	export let pokemon: Pokemon;
 </script>
@@ -11,7 +11,7 @@
 	</div>
 	<div class="card-bottom" style="--background-color: {getTypeColor(pokemon.types[0]).dark}">
 		<h3 class="number-text">#{pokemon.pokemon_id}</h3>
-		<h2 class="name-text">{pokemon.name}</h2>
+		<h2 class="name-text">{capitalizeFirstLetterOfEachWord(pokemon.name)}</h2>
 	</div>
 </div>
 
