@@ -2,6 +2,7 @@
 	import Header from '$components/layout/header.svelte';
 	import Footer from '$components/layout/footer.svelte';
 	import TypesNav from '$components/layout/types-nav.svelte';
+	import '@fontsource/ubuntu';
 </script>
 
 <Header />

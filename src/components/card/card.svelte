@@ -52,11 +52,13 @@
 	}
 
 	.number-text {
+		font-family: 'Ubuntu', sans-serif;
 		color: #fff;
 		margin: 5px 0 2px 0;
 	}
 
 	.name-text {
+		font-family: 'Ubuntu', sans-serif;
 		color: #fff;
 		margin: 2px 0 5px 0;
 	}

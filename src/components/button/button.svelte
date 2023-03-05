@@ -41,6 +41,7 @@
 		font-size: 14px;
 		cursor: pointer;
 		background-color: var(--background-color);
+		font-family: 'Ubuntu', sans-serif;
 	}
 
 	.border-top {
