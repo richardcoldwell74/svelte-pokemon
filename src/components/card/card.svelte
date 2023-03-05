@@ -5,7 +5,7 @@
 	export let pokemon: Pokemon;
 </script>
 
-<div class="container" style="--background-color: {getTypeColor(pokemon.types[0]).light}">
+<div class="container" style="--background-color: {getTypeColor(pokemon.types[0]).dark}">
 	<div class="card-top" style="--background-color: {getTypeColor(pokemon.types[0]).light}">
 		<img class="pokemon-image" src={pokemon.image.url} alt={'${allPokemon[0].name}'} />
 	</div>
@@ -30,22 +30,23 @@
 
 	.card-top {
 		display: flex;
-		width: 100%;
 		background-color: var(--background-color);
 		justify-content: center;
-		border-radius: 10px 10px 0 0;
-		padding: 20px 0 20px 0;
+		border-radius: 50%;
+		margin: 20px 0 10px 0;
+		padding: 25px;
+		box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.6);
 	}
 
 	.card-bottom {
 		display: flex;
 		flex-direction: column;
+		justify-content: flex-start;
 		width: 100%;
 		height: 100%;
 		background-color: var(--background-color);
 		align-items: center;
 		border-radius: 30px 30px 10px 10px;
-		filter: drop-shadow(0px -3px 10px rgba(0, 0, 0, 0.6));
 	}
 
 	.pokemon-image {
@@ -56,14 +57,14 @@
 	.number-text {
 		font-family: 'Ubuntu', sans-serif;
 		color: #fff;
-		margin: 15px 0 2px 0;
+		margin: 0;
 		letter-spacing: 1px;
 	}
 
 	.name-text {
 		font-family: 'Ubuntu', sans-serif;
 		color: #fff;
-		margin: 2px 0 5px 0;
+		margin: 0;
 		letter-spacing: 1px;
 	}
 </style>
