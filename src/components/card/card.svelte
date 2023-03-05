@@ -5,33 +5,49 @@
 	export let pokemon: Pokemon;
 </script>
 
-<div class="container" style="--background-color: {getTypeColor(pokemon.types[0]).dark}">
-	<div class="card-top" style="--background-color: {getTypeColor(pokemon.types[0]).light}">
-		<img class="pokemon-image" src={pokemon.image.url} alt={'${allPokemon[0].name}'} />
-	</div>
-	<div class="card-bottom" style="--background-color: {getTypeColor(pokemon.types[0]).dark}">
-		<h3 class="number-text">#{pokemon.pokemon_id}</h3>
-		<h2 class="name-text">{capitalizeFirstLetterOfEachWord(pokemon.name)}</h2>
-		<div class="type-container">
-			{#each pokemon.types as type}
-				<div class="type" style="--background-color: {getTypeColor(type).light}">
-					{capitalizeFirstLetterOfEachWord(type)}
-				</div>{/each}
+<div class="card">
+	<div class="container" style="--background-color: {getTypeColor(pokemon.types[0]).dark}">
+		<div class="card-top" style="--background-color: {getTypeColor(pokemon.types[0]).light}">
+			<img class="pokemon-image" src={pokemon.image.url} alt={'${allPokemon[0].name}'} />
+		</div>
+		<div class="card-bottom" style="--background-color: {getTypeColor(pokemon.types[0]).dark}">
+			<h3 class="number-text">#{pokemon.pokemon_id}</h3>
+			<h2 class="name-text">{capitalizeFirstLetterOfEachWord(pokemon.name)}</h2>
+			<div class="type-container">
+				{#each pokemon.types as type}
+					<div class="type" style="--background-color: {getTypeColor(type).light}">
+						{capitalizeFirstLetterOfEachWord(type)}
+					</div>{/each}
+			</div>
 		</div>
 	</div>
 </div>
 
 <style>
+	.card {
+		display: flex;
+		justify-content: center;
+		align-items: flex-start;
+	}
+
+	.card > :hover {
+		border: #fff solid 3px;
+		transform: scale(1.05);
+	}
+
 	.container {
 		display: flex;
 		flex-direction: column;
 		justify-content: flex-start;
 		align-items: center;
 		width: 300px;
-		height: 354px;
 		box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.6);
 		border-radius: 10px;
 		background-color: var(--background-color);
+		cursor: pointer;
+		border: transparent solid 3px;
+		transform: scale(1);
+		transition: all 0.5s ease-in-out;
 	}
 
 	.card-top {
